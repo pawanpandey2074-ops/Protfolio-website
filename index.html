@@ -4,150 +4,256 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pawan Pandey</title>
+        <meta name="description"
+            content="Personal portfolio website of Pawan Pandey, a BIT student interested in Data Science, Machine Learning, Artificial Intelligence, and modern technology.">
+        <title>Pawan Pandey | Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-container">
 
-        <!--This is the Header section-->
+                <a href="#" class="logo">Pawan</a>
+
+                <!-- CSS-only mobile menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon" aria-label="Open navigation menu">
+                    &#9776;
+                </label>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Technical Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Header / Hero Section -->
         <header>
-            <h1>Hi<br> I'm Pawan pandey</h1>
+            <div class="hero-container">
+
+                <div class="hero-content">
+                    <p class="hero-intro">Hello, I am</p>
+                    <h1>Pawan Pandey</h1>
+                    <p class="hero-description">
+                        A BIT student interested in Data Science, Machine Learning,
+                        Artificial Intelligence, and modern technology.
+                    </p>
+                    <a class="hero-button" href="#about">Explore My Portfolio</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/Profilee.png" alt="Professional portrait of Pawan Pandey">
+                </div>
+
+            </div>
         </header>
 
-        <!--This is the navigation section-->
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Technical Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <!--from here main start-->
 
+
+
+
+        <!-- Main Content -->
         <main>
 
+            <!-- About Section -->
             <section id="about">
-                <h2>About page</h2>
-                <img src="images/profile.png" alt="Profile photo of the pawan pandey">
-                <p>
-                    Hi, I am Pawan Pandey, a passionate student of Bachelor of Information
-                    Technology (BIT) in Data Science, Machine Learning and Artificial Intelligence.
-                    I love technology and data as tools to help create solutions and meaningful solutions.
-                    On this website I am sharing my learning journey, projects, discoveries and experiences as
-                    I continue to learn and explore the world of Data Science, ML, AI and modern technology.
-                </p>
+                <div class="section-heading">
+                    <p class="section-label">ABOUT ME</p>
+                    <h2>Who I Am</h2>
+                </div>
+
+                <div class="about-content">
+                    <div class="profile-image">
+                        <img src="images/profilee.png" alt="Profile photo of Pawan Pandey">
+                    </div>
+
+                    <div class="about-text">
+                        <p>
+                            Hi, I am Pawan Pandey, a passionate student of Bachelor of
+                            Information Technology (BIT) with an interest in Data Science,
+                            Machine Learning, and Artificial Intelligence.
+                        </p>
+
+                        <p>
+                            I enjoy learning how technology and data can be used to
+                            understand problems and create meaningful solutions. I am
+                            currently developing my skills in programming, databases,
+                            web development, and data analysis.
+                        </p>
+
+                        <p>
+                            This portfolio presents my learning journey, projects,
+                            technical skills, and experiences as I continue to explore
+                            the world of modern technology.
+                        </p>
+                    </div>
+                </div>
             </section>
 
 
+            <!-- Technical Skills Section -->
             <section id="skills">
-                <h2>Technical Skills</h2>
-                <dl>
-                    <dt>Programming langauges</dt>
-                    <dd>
-                        programming langauges such as c, python, and SQL
-                    </dd>
+                <div class="section-heading">
+                    <p class="section-label">MY SKILLS</p>
+                    <h2>Technical Skills</h2>
+                </div>
 
+                <dl class="skills-list">
 
-                    <dt>HTML 5</dt>
-                    <dd>
-                        This is used for creating the strutcure and semantic content of web pages.
-                    </dd>
+                    <div class="skill-item">
+                        <dt>Programming Languages</dt>
+                        <dd>
+                            C, Python, and SQL for programming, problem solving,
+                            database work, and data analysis.
+                        </dd>
+                    </div>
 
-                    <dt>CSS</dt>
-                    <dd>
-                        This is used for desining and controling the visual presentation of website.
-                    </dd>
-                    <dt>GIT and GitHUB</dt>
-                    <dd>
-                        This is Used for source-code management, version control, and sharing software projects.
-                    </dd>
-                    <dt>Tools & Technologies</dt>
-                    <dd>
-                        Jupyter Notebook · VS Code · Git · GitHub · MySQL
-                    </dd>
+                    <div class="skill-item">
+                        <dt>HTML5</dt>
+                        <dd>
+                            Used for creating the structure and semantic content
+                            of web pages.
+                        </dd>
+                    </div>
+
+                    <div class="skill-item">
+                        <dt>CSS</dt>
+                        <dd>
+                            Used for designing and controlling the visual
+                            presentation and responsive layout of websites.
+                        </dd>
+                    </div>
+
+                    <div class="skill-item">
+                        <dt>Git and GitHub</dt>
+                        <dd>
+                            Used for source-code management, version control,
+                            and sharing software projects.
+                        </dd>
+                    </div>
+
+                    <div class="skill-item">
+                        <dt>Tools and Technologies</dt>
+                        <dd>
+                            Jupyter Notebook, VS Code, Git, GitHub, and MySQL.
+                        </dd>
+                    </div>
+
                 </dl>
             </section>
 
 
+            <!-- Projects Section -->
             <section id="projects">
-                <h2>Projects</h2>
+                <div class="section-heading">
+                    <p class="section-label">MY WORK</p>
+                    <h2>Projects</h2>
+                </div>
 
-                <article>
-                    <h3>Project 1: Password Strength Checker</h3>
+                <div class="project-grid">
 
-                    <p>
-                        A simple Python project that checks password 
-                        strength based on length, uppercase and lowercase 
-                        letters, numbers, and special characters, while providing 
-                        suggestions to create a stronger password.
-                    </p>
-                    <p>
-                        <a href="https://github.com/pawanpandey2074-ops/project_1">
+                    <article class="project-card">
+                        <p class="project-number">PROJECT 01</p>
+                        <h3>Password Strength Checker</h3>
+
+                        <p>
+                            A simple Python project that checks password strength
+                            based on length, uppercase and lowercase letters,
+                            numbers, and special characters. It also provides
+                            suggestions for creating a stronger password.
+                        </p>
+
+                        <a href="https://github.com/pawanpandey2074-ops/project_1" target="_blank"
+                            rel="noopener noreferrer">
                             View Project Repository
                         </a>
-                    </p>
-                </article>
+                    </article>
 
-                <article>
-                    <h3>Project 2: Personal Expense Data Analyzer</h3>
 
-                    <p>
-                        A simple Python data analysis project that automatically 
-                        creates sample expense data, analyzes spending patterns, 
-                        and generates charts to visualize expenses.
-                    </p>
-                    <p>
-                        <a href="https://github.com/pawanpandey2074-ops/Personal-Expense-Data-Analyzer">
+                    <article class="project-card">
+                        <p class="project-number">PROJECT 02</p>
+                        <h3>Personal Expense Data Analyzer</h3>
+
+                        <p>
+                            A Python data analysis project that creates sample
+                            expense data, analyzes spending patterns, and generates
+                            charts to visualize personal expenses.
+                        </p>
+
+                        <a href="https://github.com/pawanpandey2074-ops/Personal-Expense-Data-Analyzer" target="_blank"
+                            rel="noopener noreferrer">
                             View Project Repository
                         </a>
-                    </p>
-                </article>
+                    </article>
+
+                </div>
             </section>
 
 
-
+            <!-- Contact Section -->
             <section id="contact">
-                <h2>Contact Me</h2>
-                <p>
-                    If you would like to contact me, please complete the
-                    form below.
-                </p>
+                <div class="section-heading">
+                    <p class="section-label">GET IN TOUCH</p>
+                    <h2>Contact Me</h2>
+                </div>
 
-                <form action="#" method="post">
+                <div class="contact-content">
 
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </p>
+                    <div class="contact-intro">
+                        <p>
+                            If you would like to contact me, please complete
+                            the form. I would be happy to hear from you.
+                        </p>
 
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
+                        <p>
+                            I am always interested in learning, discussing
+                            technology, and connecting with people who share
+                            similar interests.
+                        </p>
+                    </div>
 
-                    <p>
-                        <label for="message">Message:</label>
-                        <br>
-                        <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-                    </p>
+                    <form action="#" method="post">
 
-                    <p>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+
                         <button type="submit">Send Message</button>
-                    </p>
 
-                </form>
+                    </form>
+
+                </div>
             </section>
-
 
         </main>
-        <!--from here footer start-->
+
+
+        <!-- Footer -->
         <footer>
-            <p>&copy; 2026 Pawan Pandey. All rights reserved.</p>
-            <p>
-                This portfolio was created using semantic HTML5
-                without CSS or inline styling.
-            </p>
+            <div class="footer-content">
+                <p>&copy; 2026 Pawan Pandey. All rights reserved.</p>
+                <p>
+                    This portfolio was created using semantic HTML5
+                    and an external CSS stylesheet.
+                </p>
+            </div>
         </footer>
 
     </body>
